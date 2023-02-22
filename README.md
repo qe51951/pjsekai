@@ -1,0 +1,2 @@
+# pjsekai
+Player R calculate
