@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Input Page</title>
+  </head>
+  <body>
+    <h1>Input Page</h1>
+    <form method="post" action="submit-form.php">
+      <table>
+        <thead>
+          <tr>
+            <th>Column 1</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            <th>Column 4</th>
+            <th>Column 5</th>
+            <th>Column 6</th>
+            <th>Column 7</th>
+          </tr>
+        </thead>
+        <tbody>
+          <?php for ($i = 1; $i <= 200; $i++) { ?>
+            <tr>
+              <td><input type="text" name="row<?php echo $i; ?>-col1"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col2"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col3"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col4"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col5"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col6"></td>
+              <td><input type="text" name="row<?php echo $i; ?>-col7"></td>
+            </tr>
+          <?php } ?>
+        </tbody>
+      </table>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+</html>
